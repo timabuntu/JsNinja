@@ -2,6 +2,20 @@
 //*  Esse escopo permite a função acessar e manipular variáveis externas à função
 //*  A função lembra do lugar onde ela foi definida, a partir disso ela busca a variável no escopo em que ela foi criada, e assim continua a busca níveis acima dela até ela encontrar
 
+const scope = "Global";
+
+function fnOutSide() {
+  const scope = "Local";
+  function fnInside() {
+    return scope;
+  }
+
+  return fnInside;
+}
+
+const myFunction = fnOutSide();
+console.log(myFunction());
+
 function foo(a) {
   let b = a * 2;
 
