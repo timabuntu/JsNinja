@@ -20,3 +20,16 @@
  *Input:(25,75)
  *Output: 50
 */
+
+let students = [2, 5, 7, 1, -2];
+
+let studentSum = 0;
+let studentTotal = students.length;
+
+students.map((student) => {
+  studentSum += student;
+});
+
+let average = studentSum / studentTotal;
+
+console.log(average);
