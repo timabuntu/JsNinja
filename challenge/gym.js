@@ -21,15 +21,13 @@
  *Output: 50
 */
 
-let students = [2, 5, 7, 1, -2];
+let studentsGym = [10, 10, 10, 10, 9];
 
-let studentSum = 0;
-let studentTotal = students.length;
+const studentsTotal = studentsGym.length;
+const sumNotes = studentsGym.reduce((acc, note) => {
+  return acc + note;
+}, 0);
 
-students.map((student) => {
-  studentSum += student;
-});
-
-let average = studentSum / studentTotal;
+const average = sumNotes / studentsTotal;
 
 console.log(average);
