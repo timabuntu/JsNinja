@@ -21,10 +21,9 @@
  *Output: 50
 */
 
-let studentsGym = [10, 10, 10, 10, 9];
+const studentsGym = [10, 9, 6, 8, 9, 1, 5, 7];
 
-const studentsTotal = studentsGym.length;
-const sumNotes = studentsGym.reduce((acc, note) => acc + note, 0);
-const average = sumNotes / studentsTotal;
+const average = ([...notes]) =>
+  notes.reduce((acc, note) => acc + note, 0) / notes.length;
 
-console.log(average);
+console.log(average(studentsGym));
