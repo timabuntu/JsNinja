@@ -24,10 +24,7 @@
 let studentsGym = [10, 10, 10, 10, 9];
 
 const studentsTotal = studentsGym.length;
-const sumNotes = studentsGym.reduce((acc, note) => {
-  return acc + note;
-}, 0);
-
+const sumNotes = studentsGym.reduce((acc, note) => acc + note, 0);
 const average = sumNotes / studentsTotal;
 
 console.log(average);
