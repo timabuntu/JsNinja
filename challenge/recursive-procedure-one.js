@@ -20,3 +20,19 @@
  *Input:(2)
  *Output: "chunk-chunk"
 */
+
+function CreatedChunkText(value) {
+  if (value === 0) {
+    return "";
+  }
+  if (value === 1) {
+    return "chunk";
+  } else {
+    return "chunk-" + CreatedChunkText(value - 1);
+  }
+}
+
+console.log(CreatedChunkText(4));
+console.log(CreatedChunkText(1));
+console.log(CreatedChunkText(8));
+console.log(CreatedChunkText(2));
