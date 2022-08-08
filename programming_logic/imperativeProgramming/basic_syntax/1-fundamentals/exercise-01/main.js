@@ -30,13 +30,19 @@ exercícios. Inclusive o alert mencionado acima.
 dígitos. Ex.: 1930.
 */
 
+const myBirthYear = 1983;
+
 /*
 06 - Declare uma const "currentYear", que recebe o ano atual, com 4 dígitos.
 */
 
+const currentYear = 2022;
+
 /*
 07 - Exiba as const "myBirthYear" e "currentYear", lado a lado, no console do browser.
 */
+
+console.log(myBirthYear, currentYear);
 
 /*
 08 - Experimente.
@@ -47,6 +53,8 @@ acontece.
 - Exiba a "myAge" no console.
 */
 
+const myAge = currentYear - myBirthYear;
+console.log(myAge);
 /*
 09 - Antes do console.log abaixo, declare uma const "ten", que recebe o número
 10 e:
