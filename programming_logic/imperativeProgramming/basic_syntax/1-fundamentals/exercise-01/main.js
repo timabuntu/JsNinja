@@ -67,7 +67,7 @@ Não se assuste com as crases e os cifrões. Conversaremos mais sobre operaçõe
 matemáticas e strings (textos) em breve =)
 */
 
-// console.log(`Em ${valor1}, estarei com ${valor2} anos.`)
+console.log(`Em ${currentYear + 10}, estarei com ${myAge + 10} anos.`);
 
 /*
 10 - Abra o site abaixo no browser e faça o seguinte:
@@ -80,6 +80,6 @@ você nasceu (4 dígitos) e pressione enter;
 da const myBirthYear;
 - Cole as duas linhas de código no console, pressione enter, feche o console e
 veja o que acontece.
-document.querySelector('#birthYear').value = SEU_ANO_DE_NASCIMENTO
+document.querySelector('#birthYear').value = myBirthYear
 document.querySelector('.formButton').click()
-*/
+ */
