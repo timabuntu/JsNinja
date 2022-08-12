@@ -13,3 +13,31 @@ console.log(randomArray);
 //* Atribuir "Sobrescrever" valor a um array
 heroes[0] = "Flash";
 console.log(heroes[0]);
+
+//? Métodos de arrays
+//! Length verifica o comprimento do Array
+console.log(heroes.length);
+
+//! Join concatena todos os valores do array com virgula
+console.log(heroes.join());
+console.log(heroes.join(" - "));
+
+//! IndexOf procura o valor dentro do array
+//* Se tiver o mesmo valor ele retorna o primeiro encontrado
+console.log(ages.indexOf(23));
+
+//* Se não tiver o valor ele retorna -1
+console.log(ages.indexOf(33));
+
+//! Concat concatena  arrays e não altera o array original
+const moreHeroes = ["Hulk", "Thor", "Wolverine"];
+console.log(heroes.concat(moreHeroes));
+
+//! Push adiciona um valor no final do array e altera o array original, causando uma mutação
+const pushToHeroes = heroes.push("SpiderMan", "CaptainAmerica", "Cyclops");
+console.log(heroes);
+
+//! Pop remove o ultimo valor do array retornando o item, alterando o array original, causando uma mutação
+const popFromHeroes = heroes.pop();
+console.log(popFromHeroes);
+console.log(heroes);
