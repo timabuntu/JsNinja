@@ -87,7 +87,8 @@ utilizando o método adequado para isso;
 - O console deve continuar exibindo o último item do array, que
 agora é "Lilica".
 */
-console.log(dogNames.pop());
+dogNames.pop();
+console.log(dogNames[dogNames.length - 1]);
 
 /************************************************************
 09 - Comente o console.log acima e:
@@ -100,7 +101,10 @@ apenas as letras iniciais dos nomes do array "dogNames";
 - Não digite as letras diretamente;
 - Exiba a "initials" no console.
 */
-console.log(dogNames.push("Nina"));
+
+dogNames.push("Nina");
+console.log(dogNames);
+
 const initials = `${dogNames[0][0]}${dogNames[1][0]}${dogNames[2][0]}${dogNames[3][0]}`;
 console.log(initials);
 
@@ -120,7 +124,7 @@ string que contém a parte "co" do 1º item do array "dogNames", a
 parte "ca" do 2º item e a parte "na" do 4º item;
 - A string deve resultar na palavra 'cocana', que não deve ser
 digitada diretamente;
-- No final da string, faça com que a letra "n" seja substituída por
+- Declare em uma variável favoriteDessert que receba a variável  "dessert", e faça com que a letra "n" seja substituída por
 "d", utilizando o método adequado para isso;
 - Exiba no console a string abaixo, substituindo "SOBREMESA" pela
 constante que você criou.
@@ -128,9 +132,15 @@ constante que você criou.
 'A SOBREMESA é um doce à base de coco, tradicional na América Latina e em Angola.'
 */
 const dessert = `
-${dogNames[0].slice(3, 5)}${dogNames[1].slice(2, 4)}${dogNames[3].slice(2, 4)}
+${dogNames[0].slice(3)}${dogNames[1].slice(2, 4)}${dogNames[3].slice(2, 4)}
 `;
 console.log(dessert);
+
+const favoriteDessert = dessert.replace("n", "d");
+
+console.log(
+  `A ${favoriteDessert} é um doce à base de coco, tradicional na América Latina e em Angola.`
+);
 
 /************************************************************
 12 - Comente o console.log acima e:
@@ -146,5 +156,6 @@ já tem, mais 4;
 */
 let oddNumbers = [3, 5, 7];
 console.log(oddNumbers[1] ** 3);
-oddNumbers[1] = oddNumbers[1] + 4;
+
+oddNumbers[1] += 4;
 console.log(oddNumbers[1] ** 3);
