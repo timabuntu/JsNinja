@@ -39,3 +39,41 @@ console.log(number === 2000);
 
 console.log(number !== "2000");
 console.log(number !== 2000);
+
+//Conversão de tipos
+let score = "100";
+console.log(score + 1);
+
+score = Number(score);
+console.log(score + 1);
+
+// Verificação de tipos
+const isNumber = typeof score;
+console.log(isNumber);
+
+const crazyConversion = Number("Maça");
+const convertedNumber = String(97);
+const booleanConversion = Boolean(10);
+
+console.log(crazyConversion);
+console.log(convertedNumber);
+console.log(convertedNumber, typeof convertedNumber);
+console.log(booleanConversion, typeof booleanConversion);
+
+/*
+  Valores falsy:
+    - false
+    - 0
+    - "", '', ``
+    - null
+    - undefined
+    - NaN
+
+  Valores truthy:
+    - Qualquer valor diferente de falsy
+    - true
+    - 1
+    - []
+    - {}
+    - function(){}
+ */
