@@ -91,7 +91,7 @@ const randomValues = [
 /*******************************************************************************
   06
 
-  - Descomente a constante abaixo atribua a ela algum tipo de bebida. Exemplo:
+  - Descomente a constante abaixo e atribua a ela algum tipo de bebida. Exemplo:
     água, refrigerante ou suco;
   - Utilize um switch statement com cases para essas 3 possibilidades de bebida;
   - Se o tipo da bebida é água, atribua à uma variável a mensagem "Substância
