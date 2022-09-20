@@ -1,3 +1,16 @@
+//Example HTML
+const ul = document.querySelector('[data-js="ul"]');
+
+const socialNetworks = ["youtube", "twitter", "instagram", "facebook"];
+
+let HTMLTemplate = "";
+
+socialNetworks.forEach((socialNetwork) => {
+  HTMLTemplate += `<li class="text-pink-500">${socialNetwork}</li>`;
+});
+
+ul.innerHTML = HTMLTemplate;
+
 // forEach e callbacks
 
 // Callbacks
@@ -12,7 +25,6 @@ myFunc((number) => {
 });
 
 // forEach
-const socialNetworks = ["youtube", "twitter", "instagram", "facebook"];
 
 const logArrayInfo = (socialNetworks, index, array) => {
   console.log(index, socialNetworks, array);
