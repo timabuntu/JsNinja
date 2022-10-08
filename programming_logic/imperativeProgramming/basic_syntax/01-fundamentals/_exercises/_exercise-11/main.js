@@ -4,6 +4,12 @@
   - Declare uma constante que recebe o seu nome;
   - Ela deve ter um escopo global.
 */
+const myName = 'Thiago'
+
+for (let i = 0; i < 5; i++){
+  console.log(`dentro do bloco de código: ${myName}`);
+}
+console.log(`fora do bloco de código: ${myName}`);
 
 /*******************************************************************************
   02
@@ -18,6 +24,15 @@
     defined" será exibido no console;
   - Você sabe por que isso aconteceu?
 */
+
+const logAge = () => {
+  let age = 39
+
+  console.log(age);
+}
+
+logAge()
+// console.log(age);
 
 /*******************************************************************************
   03
@@ -37,23 +52,43 @@
       "O NOME_DO_CARRO está disponível nas cores COR_01, COR_02 e COR_03".
 */
 
+const car = {
+  name: 'Uno',
+  brand: 'Fiat',
+  colors: ['preto Mystic', 'amarelo Gold', 'azul Atlantic'],
+  isRunning: false,
+  run () { this.isRunning =  true
+     return `O ${this.name} está em movimento`},
+  stop () { this.isRunning = false
+     return `O ${this.name} está parado`},
+  getColorsMessage () { return `O ${this.name} está disponível nas cores ${this.colors.join(', ')}`}
+}
+
 /*******************************************************************************
   04
 
   - Faça o carro andar e exiba no console se ele realmente está em movimento.
 */
+console.log(car.run());
+console.log(car.isRunning === true);
+
 
 /*******************************************************************************
   05
 
   - Faça o carro parar e exiba no console se ele realmente está parado.
 */
+console.log(car.stop());
+console.log(car.isRunning === false);
 
 /*******************************************************************************
   06
 
   - Exiba, no console, a mensagem com as cores do carro.
 */
+const lastItem = car.colors[car.colors.length - 1]
+
+console.log(car.getColorsMessage().replace(lastItem, `e ${lastItem}` ));
 
 /*******************************************************************************
   07
@@ -61,3 +96,5 @@
   - Exiba, no console, a mensagem "O carro é um MARCA_DO_CARRO NOME_DO_CARRO";
   - Utilize a notação de colchetes para acessar as propriedades do carro.
 */
+
+console.log(`O carro é um ${car['brand']} ${car['name']}`);
