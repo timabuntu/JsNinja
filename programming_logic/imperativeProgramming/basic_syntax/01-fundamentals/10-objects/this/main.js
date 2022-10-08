@@ -1,19 +1,26 @@
-// Adicionando Métodos
+// A palavra chave this
 
 let user = {
   name: "Thiago",
   age: 39,
   email: "thiago@gmail.com",
   city: "Sorocaba",
-  blogPost: ["Pizza de Calabresa", "4 receitas de purê de mandioquinha"],
-  login: function () {
+  blogPosts: ["Pizza de Calabresa", "4 receitas de purê de mandioquinha"],
+  login () {
     console.log("Usuário logado");
   },
-  logout: function () {
+  logout () {
     console.log("Usuário deslogado");
+  },
+  logBlogPosts () {
+    console.log(`${this.name} escreveu os seguintes posts:`);
+
+    this.blogPosts.forEach((post) => {
+      console.log(post);
+    });
   },
 };
 
-user.login();
+user.logBlogPosts();
 
-user.logout();
+console.log(this);
