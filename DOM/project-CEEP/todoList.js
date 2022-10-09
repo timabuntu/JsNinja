@@ -5,6 +5,7 @@ const createTask = (event) => {
   const value = input.value;
 
   console.log(value);
+  input.value = "";
 };
 
 const newTask = document.querySelector("[data-form-button]");
