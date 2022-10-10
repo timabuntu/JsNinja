@@ -4,7 +4,6 @@ const createTask = (event) => {
   const input = document.querySelector("[data-form-input]");
   const value = input.value;
 
-  const task = document.querySelector("[data-task]");
   const templateHTML = `<p class="content">${value}</>`;
 
   task.innerHTML = templateHTML;
