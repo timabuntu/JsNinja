@@ -6,8 +6,6 @@ const createTask = (event) => {
 
   const templateHTML = `<p class="content">${value}</>`;
 
-  task.innerHTML = templateHTML;
-
   input.value = " ";
 };
 
