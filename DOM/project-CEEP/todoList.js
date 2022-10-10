@@ -10,6 +10,7 @@ const createTask = (event) => {
 
   task.innerHTML = templateHTML;
 
+  list.appendChild(task);
   input.value = " ";
 };
 
