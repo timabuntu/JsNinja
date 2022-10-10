@@ -6,6 +6,8 @@ const createTask = (event) => {
   const value = input.value;
 
   const task = document.createElement("li");
+  task.classList.add("task");
+
   const templateHTML = `<p class="content">${value}</>`;
 
   task.innerHTML = templateHTML;
