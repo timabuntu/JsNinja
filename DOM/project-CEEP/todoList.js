@@ -1,14 +1,4 @@
-const ButtonDone = () => {
-  const finishButton = document.createElement("button");
-
-  finishButton.classList.add("check-button");
-  finishButton.innerText = "Concluir";
-  finishButton.addEventListener("click", () => {
-    console.log("fui clicado");
-  });
-
-  return finishButton;
-};
+const newTask = document.querySelector("[data-form-button]");
 
 const createTask = (event) => {
   event.preventDefault();
@@ -28,7 +18,16 @@ const createTask = (event) => {
   list.appendChild(task);
   input.value = " ";
 };
-
-const newTask = document.querySelector("[data-form-button]");
-
 newTask.addEventListener("click", createTask);
+
+const ButtonDone = () => {
+  const finishButton = document.createElement("button");
+
+  finishButton.classList.add("check-button");
+  finishButton.innerText = "Concluir";
+  finishButton.addEventListener("click", completeTask);
+
+  return finishButton;
+};
+
+const completeTask = (event) => {};
