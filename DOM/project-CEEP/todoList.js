@@ -32,4 +32,6 @@ const ButtonDone = () => {
 
 const completeTask = (event) => {
   const buttonDone = event.target;
+
+  const completeTask = buttonDone.parentElement;
 };
