@@ -48,5 +48,7 @@
     completeTask.classList.toggle("done");
   };
 
-  const deleteTask = (event) => {};
+  const deleteTask = (event) => {
+    const buttonDelete = event.target;
+  };
 })();
