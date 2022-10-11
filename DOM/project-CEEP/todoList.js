@@ -1,21 +1,40 @@
-const createTask = (event) => {
-  event.preventDefault();
+(() => {
+  const newTask = document.querySelector("[data-form-button]");
 
-  const list = document.querySelector("[data-list]");
-  const input = document.querySelector("[data-form-input]");
-  const value = input.value;
+  const createTask = (event) => {
+    event.preventDefault();
 
-  const task = document.createElement("li");
-  task.classList.add("task");
+    const list = document.querySelector("[data-list]");
+    const input = document.querySelector("[data-form-input]");
+    const value = input.value;
 
-  const templateHTML = `<p class="content">${value}</>`;
+    const task = document.createElement("li");
+    task.classList.add("task");
 
-  task.innerHTML = templateHTML;
+    const templateHTML = `<p class="content">${value}</>`;
 
-  list.appendChild(task);
-  input.value = " ";
-};
+    task.innerHTML = templateHTML;
 
-const newTask = document.querySelector("[data-form-button]");
+    task.appendChild(ButtonDone());
+    list.appendChild(task);
+    input.value = " ";
+  };
+  newTask.addEventListener("click", createTask);
 
-newTask.addEventListener("click", createTask);
+  const ButtonDone = () => {
+    const finishButton = document.createElement("button");
+
+    finishButton.classList.add("check-button");
+    finishButton.innerText = "Concluir";
+    finishButton.addEventListener("click", completeTask);
+
+    return finishButton;
+  };
+
+  const completeTask = (event) => {
+    const buttonDone = event.target;
+
+    const completeTask = buttonDone.parentElement;
+    completeTask.classList.toggle("done");
+  };
+})();
