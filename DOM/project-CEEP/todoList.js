@@ -1,3 +1,12 @@
+const ButtonDone = () => {
+  const finishButton = document.createElement("button");
+  finishButton.addEventListener("click", () => {
+    console.log("fui clicado");
+  });
+
+  return finishButton;
+};
+
 const createTask = (event) => {
   event.preventDefault();
 
@@ -12,6 +21,7 @@ const createTask = (event) => {
 
   task.innerHTML = templateHTML;
 
+  task.appendChild(ButtonDone());
   list.appendChild(task);
   input.value = " ";
 };
