@@ -1,4 +1,4 @@
-() => {
+(() => {
   const newTask = document.querySelector("[data-form-button]");
 
   const createTask = (event) => {
@@ -37,4 +37,4 @@
     const completeTask = buttonDone.parentElement;
     completeTask.classList.toggle("done");
   };
-};
+})();
