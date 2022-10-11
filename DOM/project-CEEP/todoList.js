@@ -15,9 +15,8 @@
     const buttonDelete = document.createElement("button");
 
     buttonDelete.innerText = "deletar";
-    buttonDelete.addEventListener("click", () => {
-      console.log("deletado");
-    });
+    buttonDelete.addEventListener("click", deleteTask);
+
     return buttonDelete;
   };
 
@@ -48,4 +47,6 @@
     const completeTask = buttonDone.parentElement;
     completeTask.classList.toggle("done");
   };
+
+  const deleteTask = (event) => {};
 })();
