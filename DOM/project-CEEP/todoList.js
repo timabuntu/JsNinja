@@ -1,5 +1,7 @@
 const ButtonDone = () => {
   const finishButton = document.createElement("button");
+
+  finishButton.classList.add("check-button");
   finishButton.addEventListener("click", () => {
     console.log("fui clicado");
   });
