@@ -11,6 +11,8 @@
     return finishButton;
   };
 
+  const ButtonDelete = () => {};
+
   const createTask = (event) => {
     event.preventDefault();
 
