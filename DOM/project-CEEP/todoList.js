@@ -50,8 +50,10 @@
 
   const deleteTask = (event) => {
     const buttonDelete = event.target;
-
     const completeTask = buttonDelete.parentElement;
+
+    completeTask.remove();
+
     return buttonDelete;
   };
 })();
