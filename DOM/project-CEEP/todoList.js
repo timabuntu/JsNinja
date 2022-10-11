@@ -15,6 +15,10 @@
     const buttonDelete = document.createElement("button");
 
     buttonDelete.innerText = "deletar";
+    buttonDelete.addEventListener("click", () => {
+      console.log("deletado");
+    });
+    return buttonDelete;
   };
 
   const createTask = (event) => {
@@ -32,6 +36,7 @@
     task.innerHTML = templateHTML;
 
     task.appendChild(ButtonDone());
+    task.appendChild(ButtonDelete());
     list.appendChild(task);
     input.value = " ";
   };
