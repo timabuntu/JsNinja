@@ -14,6 +14,7 @@
   const ButtonDelete = () => {
     const buttonDelete = document.createElement("button");
 
+    buttonDelete.classList.add("check-button");
     buttonDelete.innerText = "deletar";
     buttonDelete.addEventListener("click", deleteTask);
 
