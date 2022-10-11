@@ -11,7 +11,11 @@
     return finishButton;
   };
 
-  const ButtonDelete = () => {};
+  const ButtonDelete = () => {
+    const buttonDelete = document.createElement("button");
+
+    buttonDelete.innerText = "deletar";
+  };
 
   const createTask = (event) => {
     event.preventDefault();
