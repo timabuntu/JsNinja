@@ -30,4 +30,6 @@ const ButtonDone = () => {
   return finishButton;
 };
 
-const completeTask = (event) => {};
+const completeTask = (event) => {
+  const buttonDone = event.target;
+};
