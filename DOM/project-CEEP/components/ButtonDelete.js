@@ -1,4 +1,4 @@
-const ButtonDelete = () => {
+export const ButtonDelete = () => {
   const buttonDelete = document.createElement("button");
 
   buttonDelete.classList.add("check-button");
