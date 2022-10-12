@@ -1,24 +1,24 @@
-(() => {
-  const newTask = document.querySelector("[data-form-button]");
+import { ButtonDone } from "./components/ButtonDone";
 
-  const createTask = (event) => {
-    event.preventDefault();
+const newTask = document.querySelector("[data-form-button]");
 
-    const list = document.querySelector("[data-list]");
-    const input = document.querySelector("[data-form-input]");
-    const value = input.value;
+const createTask = (event) => {
+  event.preventDefault();
 
-    const task = document.createElement("li");
-    task.classList.add("task");
+  const list = document.querySelector("[data-list]");
+  const input = document.querySelector("[data-form-input]");
+  const value = input.value;
 
-    const templateHTML = `<p class="content">${value}</>`;
+  const task = document.createElement("li");
+  task.classList.add("task");
 
-    task.innerHTML = templateHTML;
+  const templateHTML = `<p class="content">${value}</>`;
 
-    task.appendChild(ButtonDone());
-    task.appendChild(ButtonDelete());
-    list.appendChild(task);
-    input.value = " ";
-  };
-  newTask.addEventListener("click", createTask);
-})();
+  task.innerHTML = templateHTML;
+
+  task.appendChild(ButtonDone());
+  task.appendChild(ButtonDelete());
+  list.appendChild(task);
+  input.value = " ";
+};
+newTask.addEventListener("click", createTask);
