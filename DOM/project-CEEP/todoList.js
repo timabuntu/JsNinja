@@ -1,4 +1,5 @@
 import { ButtonDone } from "./components/ButtonDone";
+import { ButtonDelete } from "./components/ButtonDelete";
 
 const newTask = document.querySelector("[data-form-button]");
 
