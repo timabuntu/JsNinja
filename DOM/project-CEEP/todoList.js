@@ -1,26 +1,6 @@
 (() => {
   const newTask = document.querySelector("[data-form-button]");
 
-  const ButtonDone = () => {
-    const finishButton = document.createElement("button");
-
-    finishButton.classList.add("check-button");
-    finishButton.innerText = "Concluir";
-    finishButton.addEventListener("click", completeTask);
-
-    return finishButton;
-  };
-
-  const ButtonDelete = () => {
-    const buttonDelete = document.createElement("button");
-
-    buttonDelete.classList.add("check-button");
-    buttonDelete.innerText = "deletar";
-    buttonDelete.addEventListener("click", deleteTask);
-
-    return buttonDelete;
-  };
-
   const createTask = (event) => {
     event.preventDefault();
 
@@ -41,20 +21,4 @@
     input.value = " ";
   };
   newTask.addEventListener("click", createTask);
-
-  const completeTask = (event) => {
-    const buttonDone = event.target;
-
-    const completeTask = buttonDone.parentElement;
-    completeTask.classList.toggle("done");
-  };
-
-  const deleteTask = (event) => {
-    const buttonDelete = event.target;
-    const completeTask = buttonDelete.parentElement;
-
-    completeTask.remove();
-
-    return buttonDelete;
-  };
 })();
