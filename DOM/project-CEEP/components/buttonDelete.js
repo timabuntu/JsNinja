@@ -1,4 +1,4 @@
-export const ButtonDelete = () => {
+const ButtonDelete = () => {
   const buttonDelete = document.createElement("button");
 
   buttonDelete.classList.add("check-button");
@@ -15,3 +15,5 @@ const deleteTask = (event) => {
 
   return buttonDelete;
 };
+
+export default ButtonDelete;

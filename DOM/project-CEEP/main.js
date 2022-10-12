@@ -1,7 +1,5 @@
-import { ButtonDone } from "./components/ButtonDone";
-import { ButtonDelete } from "./components/ButtonDelete";
-
-const newTask = document.querySelector("[data-form-button]");
+import ButtonDone from "./components/buttonDone.js";
+import ButtonDelete from "./components/buttonDelete.js";
 
 const createTask = (event) => {
   event.preventDefault();
@@ -22,4 +20,6 @@ const createTask = (event) => {
   list.appendChild(task);
   input.value = " ";
 };
+
+const newTask = document.querySelector("[data-form-button]");
 newTask.addEventListener("click", createTask);

@@ -1,4 +1,4 @@
-export const ButtonDone = () => {
+const ButtonDone = () => {
   const finishButton = document.createElement("button");
 
   finishButton.classList.add("check-button");
@@ -14,3 +14,4 @@ const completeTask = (event) => {
   const completeTask = buttonDone.parentElement;
   completeTask.classList.toggle("done");
 };
+export default ButtonDone;
