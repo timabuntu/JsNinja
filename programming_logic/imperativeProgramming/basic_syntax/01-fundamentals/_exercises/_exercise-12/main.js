@@ -1,14 +1,14 @@
 /*******************************************************************************
   01
 
-  - Utilize o array abaixo para exibir no console uma string com a seguinte  
+  - Utilize o array abaixo para exibir no console uma string com a seguinte
     formatação:
-  
+
   Segundo o site Omelete, os melhores filmes de 2019 são:
     - NOME_DO_FILME, dirigido por DIRETOR_DO_FILME
     - NOME_DO_FILME, dirigido por DIRETOR_DO_FILME
     - NOME_DO_FILME, dirigido por DIRETOR_DO_FILME
-  
+
   - Todos os filmes e diretores do array devem constar na lista.
 */
 
@@ -27,17 +27,25 @@ const best2019Movies = [
   { title: "A Vida Invisível", directedBy: "Karim Aïnouz" },
 ];
 
+let message = " Segundo o site Omelete, os melhores filmes de 2019 são:";
+const generateMovieMessage = (movie) => {
+  message += `
+  - ${movie.title}, dirigido por ${movie.directedBy}`;
+};
+best2019Movies.forEach(generateMovieMessage);
+
+console.log(message);
 /*******************************************************************************
   02
 
-  - No objeto abaixo, implemente um método que exibe a seguinte mensagem no 
+  - No objeto abaixo, implemente um método que exibe a seguinte mensagem no
     console:
 
     Vídeos recentes de Roger Melo:
     Introdução ao TDD - Parte 02 | JavaScript | Jest
     Introdução ao TDD | JavaScript | Jest
     Higher-order Functions | JavaScript
-  
+
   - As 4 linhas da mensagem, podem ser exibidas separadamente.
 */
 
@@ -64,40 +72,53 @@ const youtubeUser = {
     },
     country: "Brasil",
   },
+  getRecentVideos() {
+    console.log(`Vídeos recentes de ${this.name}:`);
+    this.videos.recentVideos.forEach((video) => {
+      console.log(video.title);
+    });
+  },
 };
+
+youtubeUser.getRecentVideos();
 
 /*******************************************************************************
   03
 
   - Exiba o valor do PI no console.
 */
+console.log(Math.PI);
 
 /*******************************************************************************
   04
 
-  - Arredonde o número que a constante abaixo armazena para 9 e exiba-o no  
+  - Arredonde o número que a constante abaixo armazena para 9 e exiba-o no
     console.
 */
 
 const firstNumber = 8.3;
 
+console.log(Math.ceil(firstNumber));
+
 /*******************************************************************************
   05
 
-  - Arredonde o número que a constante abaixo armazena para 4, utilizando a  
+  - Arredonde o número que a constante abaixo armazena para 4, utilizando a
     forma padrão, e exiba-o no console.
 */
 
 const secondNumber = 3.5;
+console.log(Math.round(secondNumber));
 
 /*******************************************************************************
   06
 
-  - Arredonde o número que a constante abaixo armazena para 8 e exiba-o no  
+  - Arredonde o número que a constante abaixo armazena para 8 e exiba-o no
     console.
 */
 
 const thirdNumber = 8.9;
+console.log(Math.floor(thirdNumber));
 
 /*******************************************************************************
   07
@@ -106,10 +127,13 @@ const thirdNumber = 8.9;
 */
 
 const fourthNumber = 5.5;
+console.log(Math.trunc(fourthNumber));
 
 /*******************************************************************************
   08
 
-  - A cada vez que o index.html for carregado, exiba no console um número  
+  - A cada vez que o index.html for carregado, exiba no console um número
     aleatório de 0 à 10, incluindo 0 e 10.
 */
+const randomNumber = Math.random();
+console.log(Math.round(randomNumber * 10));
