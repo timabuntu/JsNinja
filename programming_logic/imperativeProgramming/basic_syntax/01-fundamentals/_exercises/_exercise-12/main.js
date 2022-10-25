@@ -72,7 +72,15 @@ const youtubeUser = {
     },
     country: "Brasil",
   },
+  getRecentVideos() {
+    console.log(`Vídeos recentes de ${this.name}:`);
+    this.videos.recentVideos.forEach((video) => {
+      console.log(video.title);
+    });
+  },
 };
+
+youtubeUser.getRecentVideos();
 
 /*******************************************************************************
   03
