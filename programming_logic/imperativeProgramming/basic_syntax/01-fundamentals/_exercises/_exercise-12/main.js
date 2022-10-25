@@ -118,7 +118,6 @@ console.log(Math.round(secondNumber));
 */
 
 const thirdNumber = 8.9;
-
 console.log(Math.floor(thirdNumber));
 
 /*******************************************************************************
@@ -136,3 +135,5 @@ console.log(Math.trunc(fourthNumber));
   - A cada vez que o index.html for carregado, exiba no console um número
     aleatório de 0 à 10, incluindo 0 e 10.
 */
+const randomNumber = Math.random();
+console.log(Math.round(randomNumber * 10));
