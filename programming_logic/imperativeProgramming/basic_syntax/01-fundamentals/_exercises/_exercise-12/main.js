@@ -87,6 +87,7 @@ youtubeUser.getRecentVideos();
 
   - Exiba o valor do PI no console.
 */
+console.log(Math.PI);
 
 /*******************************************************************************
   04
