@@ -108,6 +108,7 @@ console.log(Math.ceil(firstNumber));
 */
 
 const secondNumber = 3.5;
+console.log(Math.round(secondNumber));
 
 /*******************************************************************************
   06
