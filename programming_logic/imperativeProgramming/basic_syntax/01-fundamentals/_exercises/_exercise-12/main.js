@@ -128,6 +128,7 @@ console.log(Math.floor(thirdNumber));
 */
 
 const fourthNumber = 5.5;
+console.log(Math.trunc(fourthNumber));
 
 /*******************************************************************************
   08
