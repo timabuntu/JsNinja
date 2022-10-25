@@ -119,6 +119,8 @@ console.log(Math.round(secondNumber));
 
 const thirdNumber = 8.9;
 
+console.log(Math.floor(thirdNumber));
+
 /*******************************************************************************
   07
 
