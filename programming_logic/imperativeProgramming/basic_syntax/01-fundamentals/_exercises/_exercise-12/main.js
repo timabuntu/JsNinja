@@ -98,6 +98,8 @@ console.log(Math.PI);
 
 const firstNumber = 8.3;
 
+console.log(Math.ceil(firstNumber));
+
 /*******************************************************************************
   05
 
