@@ -10,8 +10,6 @@ const contaCorrenteThiago = new ContaCorrente();
 contaCorrenteThiago.agencia = 1001;
 contaCorrenteThiago.cliente = cliente1;
 
-console.log(contaCorrenteThiago);
-
 // CLIENTE 2*************************************************************
 const cliente2 = new Cliente();
 cliente2.nome = "Fernanda";
@@ -21,4 +19,9 @@ const contaCorrenteFernanda = new ContaCorrente();
 contaCorrenteFernanda.agencia = 2002;
 contaCorrenteFernanda.cliente = cliente2;
 
+// OPERAÇÕES
+contaCorrenteThiago.depositar(500);
+contaCorrenteThiago.transferir(200, contaCorrenteFernanda);
+
+console.log(contaCorrenteThiago);
 console.log(contaCorrenteFernanda);
