@@ -1,5 +1,7 @@
 export class ContaCorrente {
   agencia;
+  cliente;
+
   #saldo = 0;
 
   sacar(valor) {
