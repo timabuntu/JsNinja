@@ -40,3 +40,23 @@ if (true) {
 }
 
 console.log(dragon);
+
+// Escopo Léxico
+
+const external = () => {
+  const book = "Sapiens";
+
+  const internal = () => {
+    const book = "Os testamentos";
+    console.log(book.toUpperCase());
+
+    const extraInternal = () => {
+      console.log(book.toLowerCase());
+    };
+
+    extraInternal();
+  };
+  internal();
+};
+
+external();
