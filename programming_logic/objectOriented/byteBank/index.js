@@ -22,6 +22,9 @@ contaCorrenteFernanda.cliente = cliente2;
 // OPERAÇÕES
 contaCorrenteThiago.depositar(500);
 contaCorrenteThiago.transferir(200, contaCorrenteFernanda);
+console.log(contaCorrenteFernanda.cliente);
+console.log(contaCorrenteFernanda.saldo);
+console.log(" ");
 
 console.log(contaCorrenteThiago);
 console.log(contaCorrenteFernanda);
