@@ -27,3 +27,16 @@ function catWatch() {
 
 catWatch();
 console.log(cat);
+
+// Escopo de Bloco
+
+if (true) {
+  const dragon = "Balerion";
+  console.log(dragon);
+}
+if (true) {
+  var dragon = "Vhagar";
+  console.log(dragon);
+}
+
+console.log(dragon);
