@@ -17,3 +17,5 @@ paragraphs.forEach((paragraph) => {
 errors.forEach((error) => {
   console.log(error);
 });
+
+console.log(errors);
