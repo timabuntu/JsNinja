@@ -8,4 +8,7 @@ const paragraph = document.querySelector("div.error");
 // Obter múltiplos elementos
 
 const paragraphs = document.querySelectorAll("p");
-console.log(paragraphs);
+
+paragraphs.forEach((paragraph) => {
+  console.log(paragraph);
+});
