@@ -13,3 +13,8 @@ ol.pokemons {
   margin: 0;
   padding: 0;
 }
+
+ol.pokemons li {
+  margin: 0.5rem;
+  padding: 1rem;
+}
