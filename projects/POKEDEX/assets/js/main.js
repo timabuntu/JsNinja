@@ -1,3 +1,6 @@
+const pokemonList = document.querySelector("#pokemonList");
+const loadMoreButton = document.querySelector("#loadMoreButton");
+
 function convertPokemonToLi(pokemon) {
   return `
         <li class="pokemon ${pokemon.type}">
