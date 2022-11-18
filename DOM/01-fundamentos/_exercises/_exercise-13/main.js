@@ -35,7 +35,9 @@ const external = () => {
     const extraInternal = () => {
       console.log(movie.toUpperCase());
     };
+    extraInternal();
   };
+  internal();
 };
 
 external();
