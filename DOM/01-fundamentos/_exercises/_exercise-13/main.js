@@ -53,6 +53,10 @@ external();
 
 let randomNumbers = [3, 2, 1];
 
+randomNumbers.reverse();
+
+console.log(randomNumbers);
+
 /*
   04
 
