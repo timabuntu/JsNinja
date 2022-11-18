@@ -41,3 +41,17 @@ console.log(heroes);
 const popFromHeroes = heroes.pop();
 console.log(popFromHeroes);
 console.log(heroes);
+
+//! Shift remove o primeiro valor do array , alterando o array original, causando uma mutação
+const shiftFromHeroes = heroes.shift();
+console.log(shiftFromHeroes);
+console.log(heroes);
+
+//! Unshift insere os valores fornecidos no início , alterando o array original, causando uma mutação
+heroes.unshift("Justiceiro", "Soldado Invernal", "Medusa");
+console.log(heroes);
+
+//! Find retorna o primeiro elemento encontrado, não alterando o array original
+const searchHeroSuperman = heroes.find((hero) => hero === "Superman");
+console.log(searchHeroSuperman);
+console.log(heroes);
