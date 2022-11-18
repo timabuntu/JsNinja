@@ -73,6 +73,10 @@ let crazyArray = [
   [5, 96, 53],
 ];
 
+crazyArray.shift();
+
+console.log(crazyArray);
+
 /*
   05
 
