@@ -41,3 +41,12 @@ console.log(heroes);
 const popFromHeroes = heroes.pop();
 console.log(popFromHeroes);
 console.log(heroes);
+
+//! Shift remove o primeiro valor do array , alterando o array original, causando uma mutação
+const shiftFromHeroes = heroes.shift();
+console.log(shiftFromHeroes);
+console.log(heroes);
+
+//! Unshift  insere os valores fornecidos no início de um objeto semelhante a uma matriz , alterando o array original, causando uma mutação
+heroes.unshift("Justiceiro", "Soldado Invernal", "Medusa");
+console.log(heroes);
