@@ -132,6 +132,7 @@ console.log(dogZequinha);
 
 const h1 = document.querySelector(".main-title");
 console.log(h1);
+
 /*
   07
 
@@ -139,3 +140,7 @@ console.log(h1);
     página, através da classe deles;
   - Exiba esse NodeList no console.
 */
+
+const allH2 = document.querySelectorAll(".secondary-title");
+
+console.log(allH2);
