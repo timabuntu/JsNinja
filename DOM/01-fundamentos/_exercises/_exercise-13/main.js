@@ -97,6 +97,7 @@ const dogs = [
 const dogZequinha = dogs.find((dog) => dog.name === "Zequinha");
 
 console.log(dogZequinha);
+
 /*
   06
 
@@ -129,6 +130,8 @@ console.log(dogZequinha);
   </section>
 */
 
+const h1 = document.querySelector(".main-title");
+console.log(h1);
 /*
   07
 
