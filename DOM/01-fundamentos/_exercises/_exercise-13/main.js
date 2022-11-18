@@ -94,6 +94,9 @@ const dogs = [
   { name: "Xica", age: 6, gender: "Female", breed: "Chihuahua" },
 ];
 
+const dogZequinha = dogs.find((dog) => dog.name === "Zequinha");
+
+console.log(dogZequinha);
 /*
   06
 
