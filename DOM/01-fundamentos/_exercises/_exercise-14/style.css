@@ -1,0 +1,12 @@
+.body-background {
+  color: white;
+  background-color: indigo;
+}
+
+.number {
+  list-style: none;
+}
+
+.link {
+  color: lightblue;
+}
