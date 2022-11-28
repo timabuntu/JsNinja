@@ -15,6 +15,13 @@ title.textContent = title.textContent.toUpperCase();
   - Cada número deve estar dentro de uma <li> com a classe "number".
 */
 
+const numbers = [53, 24, 3, 8, 1, 6, 57, 80, 77, 98, 55];
+const ul = document.querySelector(".numbers");
+
+numbers.forEach((number) => {
+  ul.innerHTML += `<l1 class="number">${number}</li><br> `;
+});
+
 /*
   03
 
