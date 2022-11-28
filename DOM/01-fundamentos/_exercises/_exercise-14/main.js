@@ -5,14 +5,15 @@
     maiúsculas.
 */
 
+const title = document.querySelector("h1");
+title.textContent = title.textContent.toUpperCase();
+
 /*
   02
 
   - Adicione, na ul vazia do index.html, os números do array "numbers" abaixo;
   - Cada número deve estar dentro de uma <li> com a classe "number".
 */
-
-const numbers = [53, 24, 3, 8, 1, 6, 57, 80, 77, 98, 55];
 
 /*
   03
