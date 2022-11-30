@@ -94,9 +94,14 @@ console.log(title.style);
   - Remova a classe "body-background", do elemento body.
 */
 
+getBodyElement.classList.remove("body-background");
+
 /*
   09
 
   - Se o link da página possuir uma classe "link", remova-a;
   - Não utilize o método remove() para fazer isso.
 */
+
+getHefLink.classList.toggle("link");
+getHefLink.classList.toggle("link");
