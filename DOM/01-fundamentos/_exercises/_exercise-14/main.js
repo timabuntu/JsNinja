@@ -54,9 +54,11 @@ lis.forEach(changeLiColor);
 
   P.s: a classe "body-background" já está declarada no style.css.
 */
+
 const getBodyElement = document.querySelector("body");
 
 getBodyElement.classList.add("body-background");
+
 /*
   05
 
@@ -64,6 +66,10 @@ getBodyElement.classList.add("body-background");
     https://github.com/timabuntu/timabuntu no href
     do link do index.html.
 */
+
+const getHefLink = document.querySelector("a");
+
+getHefLink.setAttribute("href", "https://github.com/timabuntu/timabuntu");
 
 /*
   06
