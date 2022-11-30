@@ -86,6 +86,8 @@ console.log(getHefLink.getAttribute("href"));
     manipuladas via JS no h1.
 */
 
+console.log(title.style);
+
 /*
   08
 
