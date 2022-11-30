@@ -1,0 +1,20 @@
+.body-background {
+  color: white;
+  background-color: indigo;
+}
+
+.number {
+  list-style: none;
+}
+
+.even {
+  color: lightgreen;
+}
+
+.old {
+  color: lightcoral;
+}
+
+.link {
+  color: lightblue;
+}
