@@ -77,6 +77,8 @@ getHefLink.setAttribute("href", "https://github.com/timabuntu/timabuntu");
   - Exiba o novo valor do atributo href do link no console.
 */
 
+console.log(getHefLink.getAttribute("href"));
+
 /*
   07
 
