@@ -34,7 +34,7 @@ numbers.map(insertNumberInToUL);
 
 const lis = document.querySelectorAll(".number");
 
-lis.forEach((li) => {
+const changeLiColor = (li) => {
   const isEven = Number(li.textContent) % 2 === 0;
 
   if (isEven) {
@@ -43,7 +43,9 @@ lis.forEach((li) => {
   }
 
   li.style.color = "lightcoral";
-});
+};
+
+lis.forEach(changeLiColor);
 
 /*
   04
