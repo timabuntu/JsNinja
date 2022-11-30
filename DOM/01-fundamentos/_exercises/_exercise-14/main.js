@@ -18,15 +18,17 @@ title.textContent = title.textContent.toUpperCase();
 const numbers = [53, 24, 3, 8, 1, 6, 57, 80, 77, 98, 55];
 const ul = document.querySelector(".numbers");
 
-numbers.forEach((number) => {
-  ul.innerHTML += `<l1 class="number">${number}</li><br> `;
-});
+const insertNumberInToUL = (number) => {
+  ul.innerHTML += `<l1 class="number">${number}</li><br>`;
+};
+
+numbers.map(insertNumberInToUL);
 
 /*
   03
 
   - Modifique as cores dos números dentro da ul da seguinte forma:
-    - Se o número é par, ele deve ser exibido na cor "lightblue";
+    - Se o número é par, ele deve ser exibido na cor "lightgreen";
     - Se o número é ímpar, exiba-o na cor "pink".
 */
 
