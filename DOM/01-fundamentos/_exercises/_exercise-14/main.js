@@ -54,7 +54,9 @@ lis.forEach(changeLiColor);
 
   P.s: a classe "body-background" já está declarada no style.css.
 */
+const getBodyElement = document.querySelector("body");
 
+getBodyElement.classList.add("body-background");
 /*
   05
 
