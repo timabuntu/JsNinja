@@ -32,6 +32,19 @@ numbers.map(insertNumberInToUL);
     - Se o número é ímpar, exiba-o na cor "pink".
 */
 
+const lis = document.querySelectorAll(".number");
+
+lis.forEach((li) => {
+  const isEven = Number(li.textContent) % 2 === 0;
+
+  if (isEven) {
+    li.style.color = "lightgreen";
+    return;
+  }
+
+  li.style.color = "lightcoral";
+});
+
 /*
   04
 
